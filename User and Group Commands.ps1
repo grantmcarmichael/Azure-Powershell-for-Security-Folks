@@ -1,10 +1,6 @@
-## 
-# PowerShell commands for users and groups
-# Grant Carmichael
-##
-
 ###################################
-# Handy commands for users
+# Handy PowerShell commands for users
+# Grant Carmichael
 ###################################
 
 # Get Azure AD Users
