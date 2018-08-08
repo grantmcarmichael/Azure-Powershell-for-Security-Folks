@@ -10,7 +10,7 @@
 # In this case, we'll view a storage account, but if you get the Id for other resources,
 # you can see the role assignments for those too
 # For the respective storage account, get the attributes
-Get-AzureRmStorageAccount -ResourceGroupName "<Resource Group Name" -AccountName <storage account name>
+Get-AzureRmStorageAccount -ResourceGroupName "<Resource Group Name>" -AccountName <storage account name>
 
 # Grab the ID and take a peek at the role assignments
 Get-AzureRMRoleAssignment -Scope "<the long id of the storage account>"
