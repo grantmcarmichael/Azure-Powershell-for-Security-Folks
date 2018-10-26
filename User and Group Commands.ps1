@@ -31,6 +31,9 @@ Get-AzureRmADServicePrincipal | select DisplayName
 # Search Service Principals
 Get-AzureRmADServicePrincipal | where DisplayName -like "*<search string>*"
 
+# Get the Global Admin/Company Administrator
+Get-AzureADDirectoryRole | Where-Object {$_.displayName -eq 'Company Administrator'} | Select-Object -Property ObjectId | Get-AzureADDirectoryRoleMember -ObjectId {$_.objectId}
+
 ###################################
 # Handy commands for groups
 ###################################
